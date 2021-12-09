@@ -5,7 +5,6 @@ Authors: Parth Iramani, Sittun Swayam Prakash, Atrima Ghosh, Zoe Masood, Jenna G
 __DESCRIPTION:
 
 The aim of our project is to detect fake reviews on Amazon using the review text. Our approach combines semi-supervised learning and transformer models to identify fake Amazon reviews.
-The end product of our project is a web application which will allow the user to predict whether a review is fake or real.
 The Datasets used in our projects are:
 Labelled Dataset from Kaggle - https://www.kaggle.com/lievgarcia/amazon-reviews
 Unlabelled dataset from Amazon - https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_multilingual_US_v1_00.tsv.gz
@@ -23,7 +22,7 @@ Pandas, Numpy, scikit-learn - Commonly used Machine Learning python libraries
 transformers - Transformers provides thousands of pretrained models to perform tasks on texts such as classification, information extraction, question answering, summarization, translation, text generation and more in over 100 languages.
 datasets - Huggingface Datasets is a library for easily accessing and sharing datasets, and evaluation metrics for Natural Language Processing (NLP), computer vision, and audio tasks.
 
-The following are the steps and respective code (.py files) invloved in obtaining the final model file that is used for prediction on the website.
+The following are the steps and respective code (.py files) invloved in obtaining the final model file that is used for prediction.
 1. Modeling - Sentence Transformer and getting embeddings for review text
 	|___ 11initial_cleaning.py
 2. Logistic Regression with Labelled Dataset
@@ -53,10 +52,5 @@ The public Tableau dashboard (https://public.tableau.com/app/profile/zoe.masood/
 __INSTALLATION:
 
 The python code files include commands that will install all the required libraries.
-
-__EXECUTION:
-
-First execute download_sentence_transformer.py to create the st_model folder needed for the website.
-Execute run.py to run the website on your local server. 
 
 
