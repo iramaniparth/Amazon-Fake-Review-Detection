@@ -47,33 +47,8 @@ Analysis using BERT (Bidirectional Encoder Representations from Transformers) mo
 	|___ 4_6242_GROUP_PROJECT_compiling_final_dataset
 
 
-__Description of the website:
+The public Tableau dashboard (https://public.tableau.com/app/profile/zoe.masood/viz/Book1_16383996536860/Dashboard1#1) is accessible for analysis of fake reviews. 
 
-The web-application hosted on (http://machinelearner.eastus2.cloudapp.azure.com/) allows the user to enter the URL of the review or the text of the review and get a prediction. 
-
-The public Tableau dashboard (https://public.tableau.com/app/profile/zoe.masood/viz/Book1_16383996536860/Dashboard1#1) is also accessible from the website. 
-
-Directory Structure:
-static
-  |___ style.css (Style Sheet for html files)
-templates
-  |___ home.html (Renders the default home page)
-  |___ manual.html (Renders the manual entry page for review data)
-  |___ result.html (Renders the result page after model prediction)
-LogReg.pkl (The saved Logistic Regression model that generates the predictions under the hood
-download_sentence_transformer.py (Commands used to download and save st_model folder) 
-run.py (The main python file running the Flask application which carries out all the computation)
-gibberish_classifier.py (The Python classifier which checks if review text entered is gibberish - if yes, it asks user to re-enter review data)
-st_model (The Sentence Transformer model that is used to generate paragraph embeddings from text data in run.py)
-
-Modules used in run.py:
-flask - to build the Python web application
-pandas - to process data as dataframes
-joblib - to load the LogReg.pkl saved model
-sklearn - to generate the prediction output and prediction report
-requests - to get html data from amazon URL
-bs4 - BeautifulSoup package to scrape relevant data off html page returned by requests
-sentence_transformers - to get the paragraph embeddings on text data from the saved st_model 
 
 __INSTALLATION:
 
